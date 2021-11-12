@@ -4,13 +4,11 @@ Os 4 pilares da programação orientada a objetos são: Abstração, Encapsulamento, 
 
 ## Abstração
 
-A abstração é utilizada para a definição de entidades do mundo real. Essas entidades são consideradas tudo que é real, tendo como consideração as suas características e ações, por exemplo:
+Classes e métodos abstratos, servem para moldar uma estrutura comum para entidades (classes) de um programa que compartilham algumas características, mas que diferem em outras. Não é permitido criar instâncias de classes abstratas, apenas da classe concreta que implementa a abstração.
 
-| Entidade | Caracteristicas | Ações |
-|---|---|---|
-| Carro, Moto | Tamanho, cor, peso, altura, valor | Acelerar, parar, ligar, desligar |
-| Violão | Tamanho, peso, madeira | Tocar nota, tocar acorde, afinar |
-| Conta no Banco | Saldo, limite, numero | Depositar, sacar, ver extrato |
+Suponha que seja necessário criar várias classes que possuem algumas características e comportamentos em comum, mas que ao mesmo tempo possuem suas particularidades, o que impede de se trabalhar com uma única classe. Nessas situações, podemos criar uma classe superior que sirva como molde para as demais, definindo sua estrutura base e que tenha, ou não, métodos já implementados por padrão.
+
+Para os métodos cuja execução seja comum a todas as classes filhas, pode-se implementá-los ainda na classe abstrata, e todas as classes filhas herdarão o mesmo comportamento. Já aqueles métodos que serão implementados de formas distintas nas classes que os herdarão, podem ser declarados apenas como uma assinatura, sem corpo, para que cada classe filha os implemente como for mais adequado.
 
 ## Encapsulamento
 
